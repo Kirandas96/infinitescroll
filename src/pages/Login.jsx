@@ -15,7 +15,7 @@ export const Login = () => {
   const navigate=useNavigate()
   const [data, setData] = useState({});
 const datas=useSelector((state)=>{
-    // console.log(state)
+    console.log(state)
 })
   const handleLogin = () => {
     dispatch(getLogin(data))
