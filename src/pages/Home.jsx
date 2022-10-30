@@ -13,7 +13,7 @@ export const Home = () => {
     })
   }
   useEffect(() => {
-    setTimeout(fetchData,2000)
+    setTimeout(fetchData,1000)
   }, [page])
   
   return (
