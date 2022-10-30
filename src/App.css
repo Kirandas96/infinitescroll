@@ -52,3 +52,20 @@
   font-weight: 700;
 
 }
+.flex{
+  width: 300px;
+  display: flex;
+  gap: 100px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  justify-content: space-around;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+img{
+  border-radius: 50%;
+}

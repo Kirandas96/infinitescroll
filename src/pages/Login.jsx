@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import { Grid, TextField } from "@mui/material";
 import { useNavigate } from "react-router";
 import { useState } from "react";
-// import { getSuccess } from '../Redux/AuthReducer/action';
 import { useDispatch, useSelector } from 'react-redux/es/exports';
 import { getLogin } from "../redux/Auth/action";
 import axios from "axios";
@@ -15,7 +14,7 @@ export const Login = () => {
   const navigate=useNavigate()
   const [data, setData] = useState({});
 const datas=useSelector((state)=>{
-    console.log(state)
+    // console.log(state)
 })
   const handleLogin = () => {
     dispatch(getLogin(data))
@@ -24,20 +23,12 @@ const datas=useSelector((state)=>{
             navigate('/home')
         }
     })
-
-    // dispatch(getSuccess(data))
-    // .then((res)=>{
-    // if(res){
-    //     navigate("/")
-    //     console.log(1)
-    // }})
-    // .catch((err)=>console.log(err))
   };
 
   const style = {
     margin: "auto",
     my: "40px",
-    width: "450px",
+    width: "300px",
 
     bgcolor: "white",
     boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",

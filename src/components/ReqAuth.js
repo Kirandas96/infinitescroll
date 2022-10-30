@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
   
   
  export const ReqAuth = ({children}) => { 
+    // let data=true
  const data=useSelector(state=>state.loginSucc) 
  const location=useLocation() 
   

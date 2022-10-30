@@ -10,6 +10,7 @@ export const MainRoute = () => {
         <Routes>
             <Route path='/login' element={<Login/>}/>
             <Route path='/home' element={<ReqAuth><Home/></ReqAuth>}/>
+            <Route path='/' element={<ReqAuth><null/></ReqAuth>}/>
         </Routes>
     </div>
   )

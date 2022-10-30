@@ -6,6 +6,7 @@ export const getLogin=({username,password})=>(dispatch)=>{
 
     return axios.get(`https://fakeservermasai.herokuapp.com/api/users?username=${username}&password=${password}`)
     .then((res)=>{
+        // console.log(res);
         if(res.data.length==1){
             dispatch(
                 {type:types.GET_LOGIN_SUCCESS,
